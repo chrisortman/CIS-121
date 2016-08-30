@@ -24,22 +24,25 @@ print "Is it less or equal?", 5 <= -2
 
 # Do something with math!
 
-print "The time is 1 : 00 PM"
+print "What time is it?"
 
-print "What time will it be in 70 minutes?"
+t = input('Enter the hour... ')
+k = input('Enter the minute... ')
 
-if 70 > 60:
-    h = 2
-print h,":",70%60,"PM"
+print "What time will it be in an hour and 10 minutes?"
 
-print "What time will it be in 140 minutes?"
+if (70 + k) > 60:
+    h = t + 1
+print h,":",(70+k)%60,"PM"
 
-if 140 > 120:
-    h = 3
-print h,":",140%60,"PM"
+print "What time will it be in 2 hours and 20 minutes?"
 
-print "What time will it be in 210 minutes?"
+if (140+k) > 120:
+    h = t + 2
+print h,":",(140+k)%60,"PM"
 
-if 210 > 180:
-    h = 4
-print h,":",210%60,"PM"
+print "What time will it be in 3 hours and 30 minutes?"
+
+if (210+k) > 180:
+    h = t + 3
+print h,":",(210+k)%60,"PM"
