@@ -1,6 +1,8 @@
-print "How many days have I been alive?"   
-days = 9 + 31 + 365 * 17 + 31 * 4+ 30 * 3 + 29
-print "%s days" % (days)
-print "How old am I?"
-year = 365.25
-print "I am %s years old" % round(days /year , 3)
+years = input("What year were you born:\n")  
+age = 2016 - years
+days = 365.25
+daysTotal = age * days
+print "You are %r years old, and you have been alive for %r days" % (age, daysTotal)
+
+
+
