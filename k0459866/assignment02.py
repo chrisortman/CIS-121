@@ -1,11 +1,16 @@
 # make a code that calculates something
-# it'll be aabout school days
+# it'll be about school days
 
-vars (days = 7)
+week = 7
 # days in a week
-vars (weekends = 2)
+weekends = 2
 # counts both days in a standard weekend
-# vars (h = )
+holidays = 16
 # counts the days off in a holiday (manually put in)
+months = 10
+# establishes how many months are in the year
 
-print weekends
+# now I'll make the program display the amount of days in the school year 
+total = ((months * (4 * week)) - (months * (4 * weekends)) - holidays)
+
+print "There will be %r days in the school year." % total
