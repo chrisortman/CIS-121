@@ -6,6 +6,9 @@ days = 7.0
 hours = 24.0 
 minutes = 60.0
 seconds = 60.0
-print years * months * weeks * days * hours *minutes *seconds, "seconds old"
+
+x = input("What is your age in years ")
+
+print x * months * weeks * days * hours *minutes *seconds, "seconds old"
 
 
