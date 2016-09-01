@@ -1,4 +1,5 @@
-print "I will now count my books:"
+my_fictional = 90
+print "I have %d fictional books" % my_fictional
 
-print "fictional", 20 * 5 - 10
-print "nonfictional", 9 / 3 * 20
+my_nonfictional = 60
+print "I have %d nonfictional books" % my_nonfictional
