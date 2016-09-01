@@ -1,2 +1,11 @@
 print #How old im I?
-print 17 * 12 * 4.3 * 7 * 24 * 60 * 60, "minutes old"
+years = 17.0
+months = 12.0
+weeks = 4.3
+days = 7.0
+hours = 24.0 
+minutes = 60.0
+seconds = 60.0
+print years * months * weeks * days * hours *minutes *seconds, "seconds old"
+
+
