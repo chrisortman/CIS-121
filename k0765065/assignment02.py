@@ -1,7 +1,7 @@
 statement = "You are"
 days_in_a_year = 365
 hours_in_a_day = 24
-days_of_this_year = 230
+days_of_this_year = 231
 h = "hours old"
 
 y = input("How old in years are you? ")
