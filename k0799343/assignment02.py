@@ -3,9 +3,28 @@ print "MATH %d" % math
 
 print "MATH2", 24/2<15
 
-# as of 5:18 8/26
-
 print "###" 
+current_number=input("Enter current number:")
+sombra= (23.0-current_number)/0.0038*3
+print ":)\n%d" % sombra,
+print "in minutes"
 
-sombra= (6.0-5.7067)/0.0038*3
-print ":) %d" % sombra
+print sombra/60,
+print "in hours"
+
+print sombra/60/24,
+print "in days"
+
+print "until 23%"
+
+sombra2= (100.0-current_number)/0.0038*3
+print "%d" % sombra2,
+print "in minutes"\n
+
+print sombra2/60,
+print "in hours"
+
+print sombra2/60/24,
+print "in days"
+
+print "until 100%"
