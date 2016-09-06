@@ -14,8 +14,10 @@ print "And the current year is %r?" % year
 print "That would mean you're %r!" % age
 #Basically puts the defined variables into strings.
 
+#Runs the variable 'age' through the if then statement, testing to see if it is greater than or equal to 18, and then running a line, and, at the same time, running another line if the requirements aren't met to run the first line.
+#\/\/\/\/\/\/
 if age >= 18:
     print "You're an adult, aren't you?"
 else:
-    print "You'll be an adult soon!"
-#Runs the variable 'age' through the if then statement, testing to see if it is greater than or equal to 18, and then running a line, and, at the same time, running another line if the requirements aren't met to run the first line.
+    print "Don't worry, you'll be 18 in %r years." % (18 - age)
+    #Calculates how many years until you're 18, then inserts it into the string.
