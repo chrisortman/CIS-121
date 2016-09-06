@@ -4,7 +4,7 @@ hours_in_a_day = 24
 h = "hours old"
 
 y = input("How old in years are you? ")
-m = input("How many days has it been since your last birthday? ")
+m = input("How many days has it been since your last birthday? ") #235
 t = input("How many hours has it been since midnight? ")
 
 print statement, y * days_in_a_year * hours_in_a_day + m * hours_in_a_day + t, h
