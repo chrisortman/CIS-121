@@ -1,6 +1,6 @@
-# print "Chris's computer"
-print "Chris's computer"
 
-# need to load the medications form NIH
-# generate synonyms
-# put them into the tableview
+person = "CHRIS!!!!!"
+x = input("Enter an equation:\n")
+print "%r" % type(x)
+
+
