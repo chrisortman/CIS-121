@@ -9,6 +9,10 @@ hours = 24.0 # sets variable
 minutes = 60.0 # sets variable
 seconds = 60.0 # sets variable
 
-print int(x) * months * weeks * days * hours *minutes *seconds, "seconds old" # multiplys all of the diffrent variables
+time = int(x) * months * weeks * days * hours *minutes *seconds
 
 
+def calc_seconds(time):
+    print "You are %d seconds old" % (time)
+    
+calc_seconds(time) 
