@@ -1,3 +1,5 @@
+from sys import argv
+script, x = argv 
 print #How old im I?
 #pls work
 months = 12.0
@@ -7,8 +9,8 @@ hours = 24.0
 minutes = 60.0
 seconds = 60.0
 
-x = input("What is your age in years ")
+#x = input("What is your age in years ")
 
-print x * months * weeks * days * hours *minutes *seconds, "seconds old"
+print int(x) * months * weeks * days * hours *minutes *seconds, "seconds old"
 
 
