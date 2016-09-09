@@ -1,5 +1,7 @@
-birthyear = 1998
-print "How old am i", 2016 - birthyear 
+birthyear = raw_input("what year was i born")
+#birthyear = 1998
+print "How old am i" ,2016 - int(birthyear)
+
 
 print "learners in class", 26 + 5
 print "sport fan", 5000 * 2 /100
