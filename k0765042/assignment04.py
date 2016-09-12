@@ -1,42 +1,18 @@
 """
-Bryant Conquest
-This calculates the distance of a storm
-9/16
+Assignment 4
+
+8/36/16
 """
+import sys #imports the system specfic parameters
 
-####Imports
-imp
+base = int(sys.argv[1])   #takes the first argument and makes it a integer
+height = int(sys.argv[2]) #takes the second argument and makes it a integer
 
-####Prompts
-"""All the prompts and variables"""
-intro = "This program will calcule the distance of a storm."
-intro2 = "Press q to exit the program or press n to keep going."
-choiceq = ("What would you like to do? ")
-distance = 0
-output_1 = "The storm is"
-output_2 = "miles away"
-seconds = int(sys.argv[1])
+###Math
+area = base * height * .5 #Multiplies the base and height by 1/2 to get the area
 
-####functions
-def what_to_do():
-    print intro
-    print intro2
-    print choiceq
-def yes():
-    distance = seconds/5.00
-    count = 0
-    while count < 1:
-        print output_1,
-        print distance,
-        print output_2
-        count = count + 1
-    
 
 ####Main
-while True:
-    what_to_do()
-    choicea = raw_input()
-    if choicea == "n":
-        yes()
-    elif choicea == "q":
-        break
+print "The base of the triangle is:", base     #Prints the statement with the base
+print "The height of the triangle is:", height #Prints the statement with the height
+print "The Area of the triangle is:", area     #Prints the statement with the area calculated previously
