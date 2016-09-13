@@ -272,6 +272,7 @@ You try to persuade her again, but she denies you.
                                     print """
 You try to persuade her again, but she denies you.
                                     """
+                                    step07li = str(raw_input("What do you do?\n"))
                                 if (step07li == "beg"):
                                     print """
 You pittifull beg the innkeeper for a room.
@@ -294,25 +295,24 @@ You already feel embaressed for begging twice, you don't want to do it again.
                                                 print """
 You already feel embaressed for begging twice, you don't want to do it again.
                                                 """
-                                    if (step07li = "threaten"):
+                                                step07li = str(raw_input("What do you do?\n"))
+                                    if (step07li == "threaten"):
                                         print """
 You threaten the innkeeper.
 You tell her that if she doesn't give you a room, you'll burn down the whole inn.
-The innkeeper, fearful of her life, gives you a room.
+The innkeeper, fearful for her business, gives you a room.
 You think you should feel bad, but you don't.
 
 You've lost karma, your sword barely glows red.
 
 You go up to your room.
-                                        """
-                                        print """
+                                        
 There are a couple things you could do before bed:
 inspect sword
 read book
 look around
 go to bed
                                         """
-                                        
                                         step08l = str(raw_input("What will you do?\n"))
                                         if (step08l == "inspect sword"):
                                             print """
@@ -448,7 +448,7 @@ Its handle and hilt have formed black, spire like growths, seeming to drip blood
 The blade beckons you to take it.
 """
                                                     step10l = str(raw_input("Will you take it? (yes/no)\n"))
-                                                        print """
+                                                    print """
 Part of you resists, but regardless, you step forward.
 As you reach for Xal'atath, you already feel its power.
 If any blade could take down an army, it'd be this blade.
@@ -473,8 +473,8 @@ One of the angels spot you, they yell,
 "He is here! The Harbinger has shown himself! Overwhelm him while you can!"
 The angels charge you.
                                                         """
-                                                        step11l == str(raw_input("How do you attack?\n"))
-                                                        print """
+                                                    step11l = str(raw_input("How do you attack?\n"))
+                                                    print """
 The angels charge you, but you are the Harbinger.
 You cataclysmically swing your sword at one of the angels.
 He's instantly obliterated.
@@ -513,19 +513,327 @@ You cannot fail, you must not fail.
 You step forward.
 The Seraphim steps forward.
 Both of you lock eyes for what seems like an eternity.
-Finally, both of you draw your swords.
+Finally, you prepare to attack.
+                                                        """
+                                                    step12l = str(raw_input("How will you attack the Seraphim?\n"))
+                                                    if (step12l == "torment"):
+                                                        print """
+You try to torment the Seraphim.
+But he resists.
+He appears more angry.
                                                         """
                                                         step12l = str(raw_input("How will you attack the Seraphim?\n"))
-                                                        if (step12l == "swing sword"):
+                                                        if (step12l == "torment"):
                                                             print """
+The Seraphim looks insulted. He charges at you furiously.
+You don't have enough time to react.
+He impales you upon his weapon, piercing your heart.
+For some reason, you don't die immediately.
+An angel picks up Xal'atath, all the other angels group around him.
+A bright flash of light almost blinds you.
+The angels move away, revealing their holy sword.
+Xal'atath is no more.
+You feel your power draining out of you faster now.
+The Seraphim looks at you, and says,
+"If the blade had corrupted you, maybe you could be saved.
+I'll give you a message, a warning really.
+Don't pick up this blade, because if you do,
+you'd better kill me next time."
+The Seraphim begins to channel a spell, an orb of light appears in his hand.
+As everything starts to go black, you feel yourself returning to a familiar spot.
+It seems the Seraphim has given you another chance.
+                                                            """
+                                                            print """
+Game over(?)
+                                                            """
+                                                    if (step12l == "swing sword"):
+                                                        print """
 You dash towards the Seraphim and swing your sword.
 The Seraphim dodges to the left, and swings back.
 You move to parry his blow.
 Your swords clash and you are both left at a stalemate.
                                                             """
-                                                            step12l = str(raw_input("How will you attack the Seraphim?\n")
-                                                
-                            
-                            
-                            
-                            
+                                                        step12l = str(raw_input("How will you attack the Seraphim?\n"))
+                                                        if (step12l == "swing sword"):
+                                                            print """
+You once again dash at the Seraphim and swing your sword.
+This time, he dodges your blow and slashes you across the back.
+It doesn't hurt as much as it should...
+                                                            """
+                                                            step12l = str(raw_input("How will you attack the Seraphim?\n"))
+                                                            if (step12l == "swing sword"):
+                                                                print """
+You dash at the seraphim yet again.
+The Seraphim smacks your sword on the side, sending it flying out of your hand.
+You quickly punch the Seraphim to gain some room, but he is on you almost immediately.
+You scramble to grab your sword once more, but the Seraphim won't let you.
+It seems that you are cornered.
+The Seraphim approaches you, blade in hand, ready to end it.
+
+But you are the Harbinger.
+
+You beckon Xal'atath, it flys towards you.
+The Seraphim is caught off guard and is cut deeply in the side.
+He falls to the ground, and you move towards him.
+As you encroach on the grounded angel, he leaps backwards.
+He holds his wound.
+He knows no torment.
+
+Not yet.
+                                                                """
+                                                                step13l = str(raw_input("How will you attack the wounded Seraphim?\n"))
+                                                                if (step13l == "torment"):
+                                                                    print """
+You torment the Seraphim.
+He wriths in anguish and pain.
+He falls to the ground, and you approach, grasping your sword tight.
+                                                                    """
+                                                                    step14l = str(raw_input("Finish the Seraphim? (yes/no)\n"))
+                                                                    print """
+You swing your sword down at the Seraphim.
+
+...
+
+...
+
+But...
+
+A shield of light surrounds the Seraphim.
+You attempt to smash the shield with a flurry of vicious blows.
+The barrier erupts into a blinding flash of light.
+You are blinded for a moment.
+Expecting a blow from the Seraphim, you prepare yourself.
+
+But nothing comes.
+
+As your vision recovers, you see the Seraphim, jumping off of heaven.
+He's trying to take the fight to hell.
+
+You charge towards the end of the platform, falling to the ground below.
+
+As you're falling, you see the Seraphim smash into the ground.
+He starts to cleave demons, attempting to find the entrance to hell.
+But this can't happen.
+
+You smash into the ground, like a meteor, leaving a giant crater.
+You charge towards the Seraphim, preparing to strike.
+He sees you and charges you as well.
+
+A huge explosion occurs, sending both of you backwards, killing many demons and angels alike.
+The Seraphim prepares for the final fight, as do you.
+The skys cry out for justice, your justice.
+
+But you will not yield.
+                                                                    """
+                                                                    step15l = str(raw_input("How will you attack?\n"))
+                                                                    if (step15l == "stab sword"):
+                                                                        print """
+You attempt to stab the Seraphim.
+The Seraphim swings upwards at your attack, in an attempt to parry it.
+Xal'atath is knocked out of your hand.
+You beckon Xal'atath, it flies towards you before the Seraphim can take advantage.
+You get ready for your next attack.
+                                                                        """
+                                                                        step15l = str(raw_input("How will you attack?\n"))
+                                                                        if (step15l == "stab sword"):
+                                                                            print """
+You try to stab the Seraphim.
+He attaempts to disarm you once again, but you recoil.
+He misses his parry, and you ready yourself.
+He looks vulnerable to a quick swing.
+
+The rain picks up, your both drenched in heavy rain.
+                                                                            """
+                                                                    if (step15l == "torment"):
+                                                                        print """
+You try to torment the Seraphim.
+If he was struck by the attack, he doesn't show it.
+It looks like it has no effect.
+                                                                        """
+                                                                        step15l = str(raw_input("How will you attack?\n"))
+                                                                        if (step15l == "torment"):
+                                                                            print """
+You try to torment the Seraphim.
+If he was struck by the attack, he isn't showing it.
+It looks like it has no effect.
+                                                                            """
+                                                                            step15l = str(raw_input("How will you attack?\n"))
+                                                                    if (step15l == "swing sword"):
+                                                                        print """
+You swing Xal'atath at the Seraphim.
+He recoils at your attack, but recovers in seconds.
+He is weakening.
+                                                                            """
+                                                                        step15l = str(raw_input("The skys are crying.\n"))
+                                                                        if (step15l == "swing sword"):
+                                                                            print """
+You swing Xal'atath at the Seraphim.
+His grasp on his weapon is getting weaker.
+He moves backwards, and recovers.
+He conjures a spear of light, and throws it at you.
+                                                                            """
+                                                                            step15ls = str(raw_input("Dodge left or right?\n"))
+                                                                            if (step15ls == "left"):
+                                                                                print """
+You dodge to the left.
+The spear homes in on you, but it can't track you in time.
+It flys past you, and you hear it impact the ground.
+Lightning strikes.
+                                                                                """
+                                                                                step15l = str(raw_input("How will you attack?\n"))
+                                                                            if (step15ls == "right"):
+                                                                                print """
+You dodge to the right.
+The spear homes in on you, you're directly in its path.
+lightning strikes the spear, and the spear impales you.
+You fall to the ground, everything starts to go black.
+
+...
+
+But you refused to die.
+
+You stand up, and pull the spear out of your chest.
+You show no sign of weakness, or pain.
+Blood drips from your chest, but you grip your sword, ready to swing.
+The Seraphim is speechless, but prepares for an attack regardless.
+                                                                                """
+                                                                                step15l = str(raw_input("How will you attack?\n"))
+                                                                                print """
+You strike out at the Seraphim.
+He tries to push you back, but you know better.
+The two of you clash for minutes without end.
+Finally, he's caught off balance, and you're able to trip him.
+He falls to the ground, you kick away his weapon before he can grab it.
+He can't do anything but guard himself.
+
+The rain picks up, lightning strikes near you, but you feel nothing.
+                                                                                """
+                                                                                step16l = str(raw_input("Kill the Seraphim? (yes/no)\n"))
+                                                                                if (step16l == "yes"):
+                                                                                    print """
+You show no hesitation, and you stab the defensless angel.
+For a moment, nothing happens.
+You feel the judgement of everyone lashing out at you all at once.
+Somehow, you don't care.
+You only care about one thing.
+
+Power.
+
+Then, the Seraphim's corpse erupts into a great pillar of light.
+His armor sits on the ground, hollow, as his physical body disintegrates.
+
+It's over.
+
+The world is ripe for the taking.
+The demons have won.
+As the pillar of light fades, the sky darkens, and then tints red.
+The devil, your master, erupts from the ground, fire following.
+He excaims,
+"You have done well, my champion, if the angels ever rise again, we'll be ready.
+Now, the task remains, find the last of the angels, and slay them in my name!"
+
+You bow your head, and you pan out and find the rest of the angels.
+
+But something stops you...
+
+You don't know why, but you can't move.
+
+All of a sudden, the Seraphim erupts from his pile or armor.
+With all the hopes and dreams of the planet, he channels everything he can into a spear of light.
+The spear, almost the size of the devil himself, is enough to destroy any evil.
+
+With a quick flick of his wrist, the spear flys at the devil, fast as lightning.
+The devil, with no time to react, is impaled.
+
+A gigantic explosion follows.
+You can't see anything, but you know what's happening.
+The devil is locked into a fight he cannot win.
+
+As the light dies down, the devil is a mere pile of ash.
+
+You charge the Seraphim, stabbing him through the heart.
+You can feel his life energies being absorbed by your blade.
+As the last of the Seraphim is assimilated, you know what you must do.
+
+You are now the devil.
+
+You, single handedly, destroyed all the hopes of everyone.
+And for what?
+Power?
+You are the very embodiment of evil.
+                                                                                """
+                                                                                
+if (step01 == "right"):
+    print """
+You go right.
+The way is dark and creepy.
+Just looking around is enough to frighten you.
+But you press forward nontheless.
+
+After around a mile of frightening timbers, you come to an opening.
+Maybe the worst is behind you?
+You look around quickly.
+There's a small piece of paper on the ground.
+There's a carving in one of the trees.
+And there's a small child sitting up against a tree.
+
+(take paper
+look at carving
+approach child)
+    """
+    step02r = str(raw_input("What do you do?\n"))
+    if (step02r == "look at carving"):
+        print """
+You look at the carving in the tree, it reads,
+"Mercy is the only way out..."
+After inspectng the carving, you see a skeleton with a hand on a rusty sword.
+It appears he tried to kill this child.
+        """
+        step02r = str(raw_input("What do you do?\n"))
+        if (step02r == "look at carving"):
+            print """
+You already looked at the carving.
+            """
+            step02r = str(raw_input("What do you do?\n"))
+                if (step02r == "look at carving"):
+                    print """
+You already looked at the carving.
+                    """
+    if (step02r == "take paper"):
+        print """
+You take the piece of paper.
+It appears to be an exerpt from a holy book.
+It reads,
+"The coming of the Harbinger and the Seraphim mark the end of days.
+All hope it never comes, and if it does, pray to Anak'vhir!"
+Looks like propaganda in order to worship certain religions.
+Regardless, you slide it into the book.
+        """
+        step02r = str(raw_input("What do you do?\n"))
+        if (step02r == "take paper"):
+            print """
+You've already taken it.
+            """
+            step02r = str(raw_input("What do you do?\n"))
+            if (step02r == "take paper"):
+                print """
+You've already taken it.
+                """
+    if (step02r == "approach child"):
+        print """
+You approach the child.
+He looks scared.
+You comfort him and tell him everything will be ok.
+He looks at you and smiles.
+Then, he jumps up and runs into the forest, never to be seen again.
+You stand up and look around.
+        """
+        print """
+Having done everything in this small area, you press on.
+While walking, you see a small statuette of an angel.
+You look at it for a moment, but then walk off.
+After a couple of miles, you see a stick on the ground.
+There's a piece of paper underneath, it reads,
+-feeling watched?-
+You look around to see the small statue at your heels.
+You jump at the shock, but it doesn't look like it could harm you.
