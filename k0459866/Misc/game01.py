@@ -836,4 +836,8 @@ After a couple of miles, you see a stick on the ground.
 There's a piece of paper underneath, it reads,
 -feeling watched?-
 You look around to see the small statue at your heels.
-You jump at the shock, but it doesn't look like it could harm you.
+You jump at back slightly from the statue.
+It doesn't really look like it could hurt you.
+        """
+        step03r = str(raw_input("Touch the statue? (yes/no)\n"))
+        
