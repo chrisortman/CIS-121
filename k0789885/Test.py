@@ -31,13 +31,28 @@ print "I don't think that worked, type the file name so I can try again:"
 
 print "" #Blank line For seperating
 
-file_again = raw_input("> ")
 
-txt_again = open(file_again)
 
-print "" #Blank line For seperating
 
-print txt_again.read()
+
+
+
+
+def typefile():
+    file_again = raw_input("> ")
+    if file_again == "me.txt":
+        return open(file_again)
+    else:
+        print "" #Blank line For seperating
+        print "" #Blank line For seperating
+        return typefile()
+        
+typefile()
+
+
+
+
+
 
 
 
