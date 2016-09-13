@@ -1,7 +1,7 @@
 from string import swapcase
 from string import replace
 
-def prancercise(hi, dash):
+def prancercise(hi):
     old = "_"
     new = " "
     x = swapcase(hi)
@@ -12,5 +12,5 @@ def prancercise(hi, dash):
 
 dash = "-"
 
-transformed = prancercise("say_hi_to","-")
+transformed = prancercise("say_hi_to")
 print dash*10, transformed, dash*10
