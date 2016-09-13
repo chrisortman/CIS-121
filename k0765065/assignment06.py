@@ -1,10 +1,10 @@
 from sys import argv
 
-string, repeat = argv
-def prancercise(string, repeat)
-    upper(string)
-    lstrip(string, "_")
-    return ("%s" * 10 + string + "%s" * 10) % repeat
+script, string, repeat = argv
 
-transformed = pracercise(arg1, arg2)
-print transformed
+def prancercise(string, repeat):
+    x = string.replace("_", " ")
+    y = repeat * 10
+    print ("%s%s%s") % (y, x.upper(), y)
+
+prancercise(string, repeat)
