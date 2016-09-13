@@ -10,6 +10,7 @@ print "What is the sum of 89/10 and 36 times six", 89.0/10.0 * (36 * 6)
 #This is setting my age to the value that the user types
 my_age = input("Enter your age:")
 
+#This input asks the user how many days are in a year 17
 days_in_a_year = input ("How many days are in a year:")
 
 #This line of code tells you how long you've been living in seconds through defined varibles
