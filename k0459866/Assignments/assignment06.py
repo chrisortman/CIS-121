@@ -34,4 +34,4 @@ def prancercise(text, surround):
 prancercise(text, surround)
 transformed = prancercise("say_hi_to", "-")
 
-print "----------%s----------" % transformed
+print "%s%s%s" % ((("-")*10), transformed, (("-")*10))
