@@ -4,5 +4,6 @@ script, text, surround = argv
 def prancercise(text,surround):
     new = text.replace("_", " ")
     b = surround*10
-    print b,new.upper(),b
+    x = new.upper()
+    print "%s%s%s" % (b,x,b)
 prancercise(text,surround)
