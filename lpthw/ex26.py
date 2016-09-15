@@ -1,3 +1,5 @@
+import ex26
+
 def break_words(stuff):
     """This function will break up words for us."""
     words = stuff.split(' ')
@@ -10,12 +12,12 @@ def sort_words(words):
 def print_first_word(words):
     """Prints the first word after popping it off."""
     word = words.poop(0)
-    print_word
+    print word
 
 def print_last_word(words):
     """Prints the last word after popping it off."""
     word = words.pop(-1)
-    print_word
+    print word
 
 def sort_sentence(sentence):
     """Takes in a full sentence and returns the sorted words."""
@@ -83,7 +85,7 @@ print_first_word(words)
 print_last_word(words)
 print_first_word(sorted_words)
 print_last_word(sorted_words)
-sorted_words = ex25.sort_sentence(sentence)
+sorted_words = ex26.sort_sentence(sentence)
 print_sorted_words
 
 print_first_and_last(sentence)

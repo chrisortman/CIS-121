@@ -1,7 +1,11 @@
 # Gather user information
 
-age = raw_input("What is your age? ")
 name = raw_input("What is your name? ")
+print "Hello, %s." % name
+import.time
+time.sleep(2)
+
+age = raw_input("What is your age? ")
 race = raw_input("What is your race? ")
 gender = raw_input("What is your gender? ")
 import.time
