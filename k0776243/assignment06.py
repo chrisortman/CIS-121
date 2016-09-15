@@ -8,7 +8,6 @@ def prancercise(hi, dash):
     new = " "
     return replace(big_hi,old, new)
 
-dashes = "-" * 10
-
+dash = "-"
     
-print dashes, prancercise("say_hi_to", "-"), dashes
+print dash*10 + prancercise("say_hi_to", "-") + dash*10
