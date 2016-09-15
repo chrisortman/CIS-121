@@ -795,10 +795,10 @@ It appears he tried to kill this child.
 You already looked at the carving.
             """
             step02r = str(raw_input("What do you do?\n"))
-                if (step02r == "look at carving"):
-                    print """
+            if (step02r == "look at carving"):
+                print """
 You already looked at the carving.
-                    """
+                """
     if (step02r == "take paper"):
         print """
 You take the piece of paper.
