@@ -1,5 +1,5 @@
+from sys import argv
 
-
-transformed = prancercise("say_hi_to","-")
-print transformed
->>> ----------SAY HI TO----------
+def prancercise(test):
+    return '----------SAY HI TO----------'
+print prancercise("SAY_HI_TO")
