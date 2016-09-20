@@ -1,8 +1,10 @@
 from sys import argv
 
 script, text, surround = argv
-def meow(text, surround):
+def prancercise(text, surround):
     new = text.replace("_"," ")
     x = surround*10
     print "%s%s%s" % (x,new.upper(),x)
-meow(text,surround)
+prancercise(text,surround)
+
+#python Assignment6.py say_hi_to -
