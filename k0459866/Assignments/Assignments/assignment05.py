@@ -19,18 +19,12 @@
 # print "So you like to eat %s and drink %s?" % (food, drink)
 # print "And your favorite place to eat at is %s?" % (restaurant)
 
-answer1 = ("yes")
-answer2 = ("Yes")
-answer3 = ("y")
-answer4 = ("Y")
+print "Is all of this information correct?"
+question = str(raw_input(">"))
 
-question = str(raw_input("Is all of this information correct?\n"))
-
-if (question == answer1) or (question == answer2) or (question == answer3) or (question == answer4) is not None:
-#Clarifying that if the question is something, it'll run(?)
-    print "Great, just making sure everything was correct!"
-elif (question != answer1) or (question == answer2) or (question ==answer3) or (question == answer4) is not None:
-    print "Uh oh, please retry the program, something went wrong!"
+if (question == "yes") and not None:
+    print "Just making sure everythings correct."
+elif (question == "no") and not None:
+    print "Uh oh, something went wrong, please restart the program!"
 else:
-    print "Something went wrong!"
-    
+    "Something went wrong"
