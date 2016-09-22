@@ -1,15 +1,12 @@
 
-####Imports
 from sys import argv
 
-####Variables
-script, inputa, surround = argv
+script, text, surround = argv
 
-####Functions
-def prancercise(inputa,surround):
-    new = inputa.replace("_", " ")
-    output = surround*10
-    print str(output) + str(new.upper()) + str(output)
+def prancercise(text,surround):
+    new = text.replace("_", " ")
+    b = surround*10
+    x = new.upper()
+    print "%s%s%s" % (b,x,b)
     
-####Main    
-prancercise(inputa,surround)
+prancercise(text,surround)
