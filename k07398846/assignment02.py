@@ -30,3 +30,4 @@ print fish
 print fish > 4
 print dog >= 50
 
+#get input threw a command line
