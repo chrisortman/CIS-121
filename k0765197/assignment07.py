@@ -5,6 +5,8 @@ time.sleep(1.000)
 var0 = input("> Enter a number: ")
 var1 = input("> Enter another number: ")
 var2 = input("> Enter another number: ")
+if var2 == 0:
+    
 var3 = input("> Enter another number: ")
 var4 = input("> Enter one more number: ")
 import time
