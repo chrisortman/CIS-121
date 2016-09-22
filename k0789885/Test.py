@@ -1,92 +1,41 @@
-from sys import argv
+total = 0
 
-script, filename = argv
+ar = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+ar1 = ar[0]
+ar2 = ar[1]
+ar3 = ar[2]
+ar4 = ar[3]
+ar5 = ar[4]
+ar6 = ar[5]
+ar7 = ar[6]
+ar8 = ar[7]
+ar9 = ar[8]
+ar10 = ar[9]
+ar11 = ar[10]
+ar12 = ar[11]
+ar13 = ar[12]
+ar14 = ar[13]
+ar15 = ar[14]
+ar16 = ar[15]
+ar17 = ar[16]
+ar18 = ar[17]
+ar19 = ar[18]
+ar20= ar[19]
 
+            
+            
+            
+            
 
+ar1,ar2,ar3,ar4,ar5,ar6,ar7,ar8,ar9,ar10,ar11,ar12,ar13,ar14,ar15,ar16,ar17,ar18,ar19,ar20 = ar
 
-txt = open(filename)
-
-prompt = '> '
-
-fingers = 8
-toes = 10
-corAns = round(8+10, 2)
-myName = "Gage"
-x = 0
-file_again = ""
-
-
-
-print "" #Blank line For seperating
-print "" #Blank line For seperating
-print "" #Blank line For seperating
-
-
-
-print("Hay buddy, real quick I'm gonna invade your file %s.") % filename
-
-print "" #Blank line For seperating
-
-print txt.read()
-
-print "" #Blank line For seperating
-
-print "I don't think that worked, type the file name so I can try again:"
-
-print "" #Blank line For seperating
-        
-
-while file_again != "MyGame.py":
-    file_again = raw_input("> ")
-    if file_again == "MyGame.py":
-        print open(file_again)
+for i in ar:
+    if ar%2 == 0:
+        total += ar
     else:
-        if x < 3:
-            print "" #Blank line For seperating
-            x = x + 1
-            print ("That wasn't right buddy, try again.")
+        if ar%5 == 0:
+            print ("Checkpoint") + ar
         else:
-            print "" #Blank line For seperating
-            print ("Come on, just type 'MyGame.py'.")
-
-
-
-print "" #Blank line For seperating
-
-
-
-print("Okay, so now that that's out of the way, what's your name?")
-name = raw_input(prompt)
-
-print "" #Blank line For seperating
-
-if name == "Julian":
-    print ("Hello %s, my name is %s") % (name, myName)
-else:
-    print ("Hello %s, how's football going? :)") % name
-
-
-
-print "" #Blank line For seperating
-
-print("How many fingers and toes do you have, minus your thumbs?\n")
-ans = raw_input(prompt)
-
-print "" #Blank line For seperating
-
-def say_hi():
-    print("Unfortunately %s, %s is most likely incorrect.") % (name, ans)
-
-say_hi()
-
-print "" #Blank line For seperating
-
-print("The correct answer is displayed below, with the correct equationing and science.")
-
-print "" #Blank line For seperating
-
-print "8 Fingers + 10 Toes = %s in total." % corAns
-
-print "" #Blank line For seperating
-
-print "Thanks For Playing!"
+            print ar 
+            
+print (total + ("- Total"))
