@@ -19,13 +19,17 @@ numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 , 13, 14, 15, 16, 17, 18, 19
 
 count = 0
 
-blarp = 21
+grr = 21
 
-if  blarp > count
+if  grr > count:
     value = numbers[count]
     count += 1
-    if 0 == value % 2
-       total += value
-    else
-        if value % 5 == 0
-        print "Checkpoint %d" % value
+    if 0 == value % 2:
+        total = total + value
+    else:
+        if value % 5 == 0:
+            print "Checkpoint %d" % value
+else:
+    pass
+
+print "%d - total" % total
