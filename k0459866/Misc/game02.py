@@ -1,8 +1,12 @@
-x = input "> "
+x = input("> ")
 
-if (x == 1 or 2 or 3):
+if (x < int(1)):
+    print "Maybe"
+elif (1 < x < 3):
     print "Yes"
+elif (x > 3):
+    print "Sure"
+elif (x == str):
+    print "Undefined"
 else:
     print "No"
-
-print 
