@@ -17,19 +17,12 @@ total = 0
 
 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 , 13, 14, 15, 16, 17, 18, 19, 20]
 
-count = 0
-
-grr = 21
-
-if  grr > count:
-    value = numbers[count]
-    count += 1
-    if 0 == value % 2:
+for i in numbers: 
+    if i % 2 == 0:
+        value = i
         total = total + value
     else:
-        if value % 5 == 0:
+        if i % 5 == 0:
             print "Checkpoint %d" % value
-else:
-    pass
 
 print "%d - total" % total
