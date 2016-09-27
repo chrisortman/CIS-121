@@ -21,9 +21,11 @@ checkpoint = []
 checkpoint.append("Checkpoint")
 
 for i in numbers: 
+    value = i
     if i % 2 == 0:
-        value = i
         total = total + value
+        if value % 5 == 0:
+            checkpoint.append(value)
     elif value % 5 == 0:
             checkpoint.append(value)
 print (checkpoint)
