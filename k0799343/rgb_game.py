@@ -54,12 +54,14 @@ while ch1 != "red" and ch1 != "green" and ch1 != "blue":
             
             ch5 = raw_input("ch5>")
                 
-            if "num" in ch5:
+            if "red" in ch5:
                 print "Correct"
+                
+            
                 
                 ch5a = raw_input("ch5a>")
                 
-                if "num" in ch5a:
+                if "green" in ch5a:
                     print "Correct"
                     
                 else:
