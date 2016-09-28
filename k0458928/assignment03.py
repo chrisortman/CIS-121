@@ -1,10 +1,10 @@
-my_age = 17
+my_age = input("Enter your age:")
 
 days_in_a_year = 365
 
 hours_in_a_day = 24
 
-print "how many seconds have i been alive?", (my_age * days_in_a_year * hours_in_a_day * 60 * 60)
+print "how many seconds have i been alive?", my_age * days_in_a_year * hours_in_a_day * 60 * 60
 
 black_cars = 8
 
