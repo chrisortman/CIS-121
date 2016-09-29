@@ -12,4 +12,4 @@ print "there are", cars, "cars available."
 print "there are only", drivers, "drivers available."
 print "there will be", cars_not_driven, "empty cars today."
 print "We can transport", carpool_capacity, "people today."
-print "We have",
+print "We have",passengers, "carpool today."
