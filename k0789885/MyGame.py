@@ -1,239 +1,202 @@
-Class = "Blank"
+from random import randrange
 
-print "What type of person are you?"
-print "1. Warrior"
-print "2. Archer"
-print "3. Mage"
+class Male:
+    def __init__(self):
+        self.pronoun = "M'Lord"
+        self.address = "Sir"
+        self.highaddress = "King"
+        self.refer = "He"
 
-def notvalid():
-    print "That's not one of the choices, please use one of the numbers displayed."
+class Female:
+    def __init__(self):
+        self.pronoun = "M'Lady"
+        self.address = "Mam"
+        self.highaddress = "Queen"
+        self.refer = "She"
 
-def gameover():
-    print "GAME OVER"
-    quit()
+class GenderNeutral:
+    def __init__(self):
+        self.pronoun = "young heir"
+        self.address = ""
+        self.highaddress = "Ruler"
+        self.refer = "They"
     
-def gochurch():
-    print "1. Talk to the Father"
-    print "2. Investigate gossip"
-    print "3. Go to Alter"
-    print "4. Leave"
-    churchCh = ""
-    while churchCh != 1 and churchCh != 2 and churchCh != 3 and churchCh != 4:
-        churchCh = raw_input("> ")
-        if churchCh == "1":
-            FatherSpeak()
-        elif churchCh == "2":
-            if rumorhear != 1:
-                if dex >= 8:
-                    print "(You hear the nuns talking about the mysterious disappearens of multiple towns folk)"
-                    print "(All victims have bite marks on there necks)"
-                else:
-                    rumor = "Speak of a murder case is going around"
-            else:
-                print "(You hear nothing else)"
-        elif churchCh == "3":
-            alter()
-        elif churchCh == "4":
-            arrivetown()
-        else:
-            notvalid()
+class Menu(object):
+
+   def __init__(self):
+       self.choices = []
+       self.texts = []
+       self.selected_value = None
+       self.invalid_text = "That's not one of the choices, please use one of the numbers displayed."
+
+   def add_choice(self, display_text, value):
+       self.choices.append(value)
+       self.texts.append(display_text)
+   
+   def current_weapon(self, weapon):
+       self.current_weapon = weapon.selected_value
+
+   def prompt(self, text):
+
+       while self.selected_value is None:
+           print text
+           num = 1
+           for display_text in self.texts:
+               print "%d. %s" % (num, display_text)
+               num = num + 1
+
+           user_choice = int(raw_input("> "))
+
+           if user_choice < 1 or user_choice > len(self.texts):
+               print self.invalid_text
+           else:
+               self.selected_value = self.choices[user_choice - 1]
             
-def homes():
-    print "1. Big home"
-    print "2. Small home one"
-    print "3. Small home two"
-    print "4. Small home three"
-    print "5. Leave"
-    houseCh = ""
-    while houseCh != 1 and houseCh != 2 and houseCh != 3 and houseCh != 4:
-        houseCh = raw_input("> ")
-        if houseCh == "1":
-            homebig()
-        elif houseCh == "2":
-            home1()
-        elif houseCh == "3":
-            home2()
-        elif houseCh == "4":
-            home3()
-        elif houseCh == "5":
-            arrivetown()
-        else:
-            notvalid()
+               
+#((((Sparing Pit 1 / Weapon Select))))
 
-def mugman():
-    print "He gets ready to fight."
-    print "1. Attack man"
-    print "2. Try to scare man"
-    print "3. Take of mans cloak"
-    print "4. Run away"
-    fightVamp= ""
-    while fightVamp != 1 and fightVamp != 2 and fightVamp != 3 and fightVamp != 4:
-        fightVamp = raw_input("> ")
-        if fightVamp == "1":
-            if dex < 4:
-                print "The man quickly bites your neck and drains you of all your blood. You died from blood loss."
-                print ""
-                gameover()
-            else:
-                if dex >= 8:
-                    print "You quickly get behind the man and break his neck."
-                elif str >= 8:
-                    print "You knock the mans head clear off his shoulders."
-                elif wis >= 8:
-                    print "You set the man on fire, he turns to ash."
-                else:
-                    print "You have no good skills and die from lack of talent."
-        elif fightVamp == "2":
-            mugman()
-        elif fightVamp == "3":
-            print "You don't have any money."
-        elif fightVamp == "4":
-            if dex < 8:
-                print "The man catches you and bites your neck, draining you of all your blood. You died from blood loss."
-                print ""
-                gameover()
-
-            else:
-                print "You get away safely."
-        else:
-            notvalid()
-       
-
-def cloaked_man():
-    print "1. Ask the man how he is."
-    print "2. Mug the man"
-    print "3. Give the man money."
-    print "4. Go back."
-    choiceV = ""
-    while choiceV != 1 and choiceV != 2 and choiceV != 3 and choiceV != 4:
-        choiceV = raw_input("> ")
-        if choiceV == "1":
-            if Class == "Archer":
-                VampireJob()
-            else:
-                print "(Silence)"
-                cloaked_man()
-        elif choiceV == "2":
-            mugman()
-        elif choiceV == "3":
-            print "You don't have any money."
-        elif choiceV == "4":
-            bar()
-        else:
-            notvalid()       
-
-def bar():
-    print "There is a man in a dark cloak in the corner and the bartender is at the counter."
-    BarCh = ""
-    while BarCh != 1 and BarCh != 2 and BarCh != 3:
-        print "What do you do?"
-        print "1. Bartender"
-        print "2. Maidens"
-        print "3. Cloaked Man"
-        print "4. Leave"
-        BarCh = raw_input("> ")
-        if BarCh == "1":
-            bartender()
-        elif BarCh == "2":
-            maidens()
-        elif BarCh == "3":
-            print "(The air around him is grim and fills you with doubt.)"
-            cloaked_man()
-        elif BarCh == "4":
-            arrivetown()
-        else:
-            notvalid()
-            
-def arrivetown():
-    print "There is a bar, church, and a few homes. What would you like to go?"
-    print "1. Bar"
-    print "2. Church"
-    print "3. Homes"
-    print "4. Leave"
-    choice = ""
-    while choice != 1 and choice != 2 and choice != 3:
-        choice = raw_input("> ")
-        if choice == "1":
-            print "You push the doors open and are greeted to a room of drunkards and maidens."
-            bar()
-        elif choice == "2":
-            print "You walk into the church. The clergy seems unrested and the Father of the church is speaking to nuns."
-            print "What do you do?"
-            gochurch()
-        elif choice == "3":
-            print "(The houses consist of one large home and three small homes)"
-            homes()
-        elif choice == "4":
-            print "You left the town to it's own fate, no need to get involved."
-            print ""
-            gameover()
-        else:
-            notvalid()
-            
-#((((Start of Game))))
-
-while Class != "Warrior" and Class != "Archer" and Class != "Mage":
-    Class = raw_input("> ")
-    if Class == "1" or Class == "Warrior":           #Warrior
-        print "Grand, fan of hitting and kicking huh? Your stats are below."
-        print ""
-        print "Strength = 8"
-        print "Dexterity = 4"
-        print "Wisdom = 2"
+def weapon():
+    weapon = Menu()
+    weapon.add_choice('Sword',1)
+    weapon.add_choice('Shield',2)
+    weapon.add_choice('Lance',3)
+    weapon.add_choice('Mace',4)
     
-        str = 8
-        dex = 4
-        wis = 2
-        Class = "Warrior"
-
-    elif Class == "2" or Class == "Archer":            #Archer
-        print "Pleasent, love daggers and running huh? Your stats are below."
-        print ""
-        print "Strength = 2"
-        print "Dexterity = 8"
-        print "Wisdom = 4"
-    
-        str = 2
-        dex = 8
-        wis = 4
-        Class = "Archer"
-
-    elif Class == "3" or Class == "Mage":            #Mage
-        print "Fantastic, enjoy power and magic huh? Your stats are below."
-        print ""
-        print "Strength = 4"
-        print "Dexterity = 2"
-        print "Wisdom = 8"
-    
-        str = 4
-        dex = 2
-        wis = 8
-        Class = "Mage"
-        
-    elif Class == "admin":
-
-        ChaName = "Gage"
-        str = 999
-        dex = 999
-        wis = 999
-        
-        print "Where to?"
-        a = raw_input("> ")
-        a()
-
+    if startgame.selected_value == 1:
+        print "Lord Maul: Good morning %s, glad you got here early. Maybe I'll go easy on you during training today." % player.pronoun
     else:
-        notvalid()        
+        print "Lord Maul: Sleep in early today again? You know the King never slept in during his sparring days. He alway wanted to try and put me in my place before he filled himself with mead."
+    print ""
+    print "Alright, lets get too it."
+    print ""
+    
+    weapon.prompt("What do you want to work on today?")
+    
+    if weapon.selected_value == 1:
+        print ""
+    elif weapon.selected_value == 2:
+        print ""
+    elif weapon.selected_value == 3:
+        print "" 
+    elif weapon.selected_value == 4:
+        thr1
         
-print ""
-print "So, whats your name good %s?" % Class
+    
+#((((Sisters Room 1))))  
+def sisroom_1():
+    sisroom_1 = Menu()
+    sisroom_1.add_choice('Sparing Pit',1)
+    sisroom_1.add_choice('Sisters Room',2)
+    sisroom_1.add_choice('Thrown Room',3)
+    sisroom_1.add_choice('Dining Hall',4)
+    
+    sisroom_1.prompt("You get dressed and look out the window, where would you like to go?")
+    
+    if sisroom_1.selected_value == 1:
+        weapon()
+    elif sisroom_1.selected_value == 2:
+        sisroom_1()
+    elif sisroom_1.selected_value == 3:
+        Thrownroom_1()
+    elif sisroom_1.selected_value == 4:
+        Dinehall_1()
+        
+        
+def Thrownroom_1():
+    thr1 = Menu()
+    thr1.add_choice('Persuade to enter the room',1)
+    thr1.add_choice('Go to Sparing Room',2)
+    thr1.add_choice('Dining Hall',3)
+    thr1.add_choice('Sisters Room',4)
+    
+    print "You walk down the hall to the thrown room but are stopped by two gaurds at the doors."
+    print "Gaurd: Sorry %s, the Queen is in a negotiation right now with the Rockdawn Kingdom." % player.pronoun
+    
+    thr1.prompt("What do you say?")
+    
+    if thr1.selected_value == 1:
+        print ""
+    elif thr1.selected_value == 2:
+        weapon()
+    elif thr1.selected_value == 3:
+        Dinehall_1() 
+    elif thr1.selected_value == 4:
+        sisroom_1() 
+        
+def Dinehall_1():
+    weapon = Menu()
+    weapon.add_choice('Sword',1)
+    weapon.add_choice('Shield',2)
+    weapon.add_choice('Lance',3)
+    weapon.add_choice('Mace',4)
+    
+    if startgame.selected_value == 1:
+        print "Lord Maul: Good morning %s, glad you got here early. Maybe I'll go easy on you during training today." % player.pronoun
+    else:
+        print "Sleep in early today again? You know the King never slept in during his sparring days. He alway wanted to try and put me in my place before he filled himself with mead."
+    print "Alright, lets get too it."
+    
+    weapon.prompt("What do you want to work on today?")
+    
+    if weapon.selected_value == 1:
+        print ""
+    elif weapon.selected_value == 2:
+        print ""
+    elif weapon.selected_value == 3:
+        print "" 
+    elif weapon.selected_value == 4:
+        print "" 
+        
+#def Startgame():
+
+#((((Start of Game)))):
+
+gender = Menu()
+gender.add_choice('Male',Male)
+gender.add_choice('Female',Female)
+gender.add_choice('No preference',GenderNeutral)
+
+print "What's your name?" 
 ChaName = raw_input("> ")
 
-print "Good to meet you %s, let's get you into the world." % ChaName
+gender.prompt("Gender?")
 
-print "You arrive at the small town of Rims Hide."
-arrivetown()
+player = gender.selected_value()
+print "---------------------------------------------------------------------------------------------------"
+print "---------------------------------------------------------------------------------------------------"
+print "---------------------------------------------------------------------------------------------------"
+print "Welcome %s, you are a child of the royal family. Next in line for the thrown and become the next %s." % (ChaName, player.highaddress)
+print "Right now your kingdom is in a mess and everyone is watching out for a knife in the back."
+print "Your younger sister, Roth, is worried you may be in danger and could be on an assassins list along with the rest of your family."
+print "You will have to make choices that influence your kingdom and watch your own neck for it may become a lot lighter if you don't."
+print "Stay clam and keep your eyes peeled, watch out for danger and rule your kingdom how you want."
+print "Do all that and you shall make a fine %s." % player.highaddress
+print "---------------------------------------------------------------------------------------------------"
+print "---------------------------------------------------------------------------------------------------"
+print "---------------------------------------------------------------------------------------------------"
+print " "
 
-        
-        
-        
-        
+print "It's early in the day and the sun has just rose through the curtains."
+print "Sir Saber(Your Butler): You know the sun only goes up once a day, might wanna see it before it's gone %s. Whenever you do decide to leave your bed don't forget that you have training today with Lord Maul. So please do get some breakfast and be on your way." % player.pronoun
+print " "
+print "(You shuffle out of bed and Sir Saber leaves the room)"
+print " "
+
+startgame = Menu()
+startgame.add_choice('Sparing Pit',1)
+startgame.add_choice('Sisters Room',2)
+startgame.add_choice('Thrown Room',3)
+startgame.add_choice('Dining Hall',4)
+
+startgame.prompt("You get dressed and look out the window, where would you like to go?")
+
+if startgame.selected_value == 1:
+    weapon()
+elif startgame.selected_value == 2:
+    sisroom_1()
+elif startgame.selected_value == 3:
+    Thrownroom_1()
+elif startgame.selected_value == 4:
+    Dinehall_1()
+
+
