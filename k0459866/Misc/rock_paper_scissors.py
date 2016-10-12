@@ -2,6 +2,7 @@
 #while True:
     
 import random
+import time
 
 user = str(raw_input("Do you choose rock, paper, or scissors?\n"))
 
@@ -14,8 +15,9 @@ foo = ['scissors', 'paper', 'rock']
 comp = (random.choice(foo))
     
 print "You chose %s." % user
+time.sleep(0.5)
 print "The computer chose %s." % comp
-    
+time.sleep(0.5)    
 if (user == int):
     print "Numbers don't work here."
 
