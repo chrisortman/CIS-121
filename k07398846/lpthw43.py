@@ -35,29 +35,43 @@ class Death(Scene):
 class CentralCorridor(Scene):
 
     def enter(self):
-        print "entering central corridor scene"
-        player_choice = raw_input("Do you want to run or fight?")
-        if player_choice == "fight":
+        print "Entering central corridor."
+        player_choice = raw_input("Do you want to go left or right?")
+        if player_choice == "left":
             return "laser_weapon_armory"
+        elif player_choice == "right":
+            return "the_bridge"
         else:
-            return "escape_pod"
+            print "Thats not a direction you can go, friend."
+            return "central_corridor"
 
 class LaserWeaponArmory(Scene):
 
     def enter(self):
-        print "entering laser weapon armory scene"
-        return "escape_pod"
+        print "Entering laser weapon armory."
+        print "As nice as the guns are there all locked up."
+        print "You decide to head back to the previous room."
+        return "central_corridor"
 
 class TheBridge(Scene):
 
     def enter(self):
-        print "entering bridge scene"
-        return "finished"
+        print "entering bridge."
+        print "There is a door on the far wall"
+        player_choice_2 = raw_input("Whould you like to go forward or back?")
+        if player_choice_2 == "forward":
+            return "escape_pod"
+        elif player_choice_2 == "back":
+            return "central_corridor"
+        elif player_choice_2 == "window":
+            return "death"
+        else:
+            print "Thats not a direction you can go, friend."
 
 class EscapePod(Scene):
 
     def enter(self):
-        print "entering escape pod scene"
+        print "entering escape pod."
         return "finished"
 
 
