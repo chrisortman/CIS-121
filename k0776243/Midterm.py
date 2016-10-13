@@ -10,17 +10,14 @@ class Scene(object):
         exit(1)
 
 
-
-
-
 class Water(object):
     
-    def enter(self, scene_map):
+    def enter(self):
         print "You're swimming in the water."
         print "You're going to run out of energy and drown."
         print "Choose between 1. swimming to the island, 2. riding the shark to the island, or 3. following ADHD and seeing...wait was that a blue dot?"
         
-        action = input("Choose number between 1-3> ")
+        action = raw_input("Choose number between 1-3> ")
         
         if action == "1":
             print "You start breast crawling to the faraway island."
@@ -52,13 +49,14 @@ class Island(Scene):
         print "You need to signal for help."
         print "You have to choose to 1.set a palm tree aflame, 2. blow tar bubbles, or 3. eat bananas."
         
-        action = input("Choose number between 1-3>")
+        action = raw_input("Choose number between 1-3>")
     
         if action == "1":
             print "You douse a palm tree with oil and set it on fire."
             print "It explodes in your face and you die."
             print "Well, sucker, you just lost."
             
+        
         elif action == "2":
             print "You start blowing bubbles made of tar."
             print "It's working.  They are rising and creating a cloud above the island."
@@ -71,7 +69,14 @@ class Island(Scene):
             print "It erupts and creates a huge signal.  Surprisingly, you're fine."
             print "The British navy comes to your rescue."
             print "You win!!!"
+        
+        return "finished"
 
+class Finished(object):
+    def enter(self):
+        print "done!"
+        exit(0)
+    
 class Engine(object):
 
     def __init__(self, scene_map):
@@ -83,6 +88,7 @@ class Engine(object):
 
         while current_scene != last_scene:
             next_scene_name = current_scene.enter()
+            print "next scene is %s" % next_scene_name
             current_scene = self.scene_map.next_scene(next_scene_name)
 
         # be sure to print out the last scene
@@ -94,7 +100,7 @@ class Map(object):
         'ship': Ship(),
         'water': Water(),
         'island': Island(),
-       
+        'finished': Finished(),
     }
 
     def __init__(self, start_scene):

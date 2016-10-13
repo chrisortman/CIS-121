@@ -4,7 +4,7 @@ class Ship(object):
             print "You're stuck in the bottom of the ship and it's filling rapidly with water."
             print "Choose between: 1. a crowbar, 2. the trapdoor key, or 3. broccoli."
     
-            action = input("Choose number between 1-3> ")
+            action = raw_input("Choose number between 1-3> ")
     
             if action == "1":
                 print "You bash the crowbar into the overhead trapdoor."
