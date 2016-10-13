@@ -29,14 +29,14 @@ class Finished(Scene):
 class Death(Scene):
 
     def enter(self):
-        print "entering death scene"
+        print "You have died"
         return "finished"
 
 class CentralCorridor(Scene):
 
     def enter(self):
         print "Entering central corridor."
-        player_choice = raw_input("Do you want to go left or right?")
+        player_choice = raw_input("Do you want to go left or right?\n>")
         if player_choice == "left":
             return "laser_weapon_armory"
         elif player_choice == "right":
@@ -58,13 +58,20 @@ class TheBridge(Scene):
     def enter(self):
         print "entering bridge."
         print "There is a door on the far wall"
-        player_choice_2 = raw_input("Whould you like to go forward or back?")
+        player_choice_2 = raw_input("Whould you like to go forward or back?\n>")
         if player_choice_2 == "forward":
             return "escape_pod"
         elif player_choice_2 == "back":
             return "central_corridor"
         elif player_choice_2 == "window":
-            return "death"
+            window_choice = raw_input("Wait you relize its outerspace on the other side of the window, You sure you want to jump out?\n")
+            if window_choice == "yes":
+                print "Well its your funeral"
+                return "death"
+            else:
+                print "Good choice"
+                return "the_bridge"
+            
         else:
             print "Thats not a direction you can go, friend."
 
