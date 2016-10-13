@@ -1,11 +1,11 @@
 #lets me use argv
-from sys import argv
+#from sys import argv
 
 #assigns arguments to argv
-script, user_name = argv
+#script, user_name = argv
 
 #uses the arguments to say something
-print "Hi %s, I'm the %s script." % (user_name, script)
+#print "Hi %s, I'm the %s script." % (user_name, script)
 
 #does some math
 math = 10*525343424+646436453534+4

@@ -1,17 +1,20 @@
-start = "Choose a door."
-idk = "I don't know what that means."
-ch1 = "Blank"
-ch2 = "Blank"
+from scene import Scene
 
+class RedRoom(Scene):
 
-print start
-
-#color choice rgb
-while ch1 != "red" and ch1 != "green" and ch1 != "blue":
-    ch1 = raw_input("ch1>")
-
-    if ch1 == "red":
-        print "gun or meat?"
+    def enter(self):
+        ch1 = "blank"
+        ch2 = "blank"
+        idk = "I don't know what that means."
+        
+  
+        print """
+        You enter through the red door and inside you find a wide hallway. 
+        About halfway down the hall there is an anry tiger glaring at you.
+        In front of you on a pedestal is a gun and a large raw steak. 
+        You may choose one. 
+        Gun or meat?"
+        """
         
         while ch2 != "gun" and ch2 != "meat":
         #gun or meat
@@ -39,39 +42,5 @@ while ch1 != "red" and ch1 != "green" and ch1 != "blue":
                 
             else:
                 print idk
-            
-       
-    elif ch1 == "green":
-        print "What do you do?"
-        
-        ch4 = raw_input("ch4>")
-        
-        if "lazers" in ch4 or "lazer" in ch4:
-            print "you slip and die."
-            
-        elif "panel" in ch4:
-            print "You look at the panel"
-            
-            ch5 = raw_input("ch5>")
                 
-            if "red" in ch5:
-                print "Correct"
-                
-            
-                
-                ch5a = raw_input("ch5a>")
-                
-                if "green" in ch5a:
-                    print "Correct"
-                    
-                else:
-                    print "Nope"
-                
-            else:
-                print "Nope"
-        
-        
-        
-        
-    else:
-        print idk
+        return "main"
