@@ -20,22 +20,22 @@ if planet == 'Moltafari':
        print "You sit down at the helm of the ship and throw levers forward as you jump into hyperspace"
        print "Your ship exits hyperspace arriving in %s and directly infront of your ship lies a planet." % planet
        print "Your second in command, Jack, walks up and asks you 'would you like us to scan it capatin?'"
-       answer = raw_input("")
+       answer = raw_input("yes or no: ")
        # next system
        
        if answer == 'yes':
            print ""
-           print "your drone returns an hour later with data from the plantet. It appears that the surface is very volatile"
+           print "Your drone returns an hour later with data from the plantet. It appears that the surface is very volatile"
            print "with a active volcano spewing lava. But their is a small village away from the rivers of lava that seems fairly safe."
            print "Jack says 'Do you want us to land and try to make contact with the village capatin? Our ship could only last a hour'"
-           answer = raw_input("")
+           answer = raw_input("yes or no: ")
            
            if answer == 'yes':
                print ""
-               print "very well captn' puttin the ship down"
-               print "Making a safe landing with the ashe from the volacano could prove a challange but jack never dissapoints, you look out the window and"
+               print "Very well captn' puttin the ship down"
+               print "Making a safe landing with the ashe from the volacano could prove a challange but Jack never dissapoints, you look out the window and"
                print "spot the village, but you dont see any people moving about. 'Ready Captn?'"
-               answer = raw_input('')
+               answer = raw_input('yes or no: ')
                
                if answer == 'yes':
                    print ""
@@ -54,35 +54,35 @@ if planet == 'Moltafari':
                if answer != 'yes':
                    print ""
                    print "'Was thinkging the same thing Captn', remember that we ony have fuel for 2 more jumps' "
-                   print "The SS exploration takes off as it leaves the plant and goes on to the next sector"
-                   print "you get to the next next sector and their their is a planet that is in front of you."
-                   print "would you like to scan it?"
-                   answer = raw_input("")
+                   print "The SS exploration takes off as it leaves the plant and goes on to the next sector."
+                   print "You get to the next next sector and there is a planet in front of you."
+                   print "Would you like to scan it?"
+                   answer = raw_input("yes or no: ")
            
            if answer == 'yes':
                print ""
-               print "you see that the planet in front of you in alike the one that you just visited from the scanner report"
-               print "after some further studying it looks like their is somekind of temple on the surface"
-               print "'do you want to land captn?' asks jack"
-               answer = raw_input("")
+               print "You see that the planet in front of you in alike the one that you just visited from the scanner report"
+               print "after some further studying it looks like their is somekind of temple on the surface."
+               print "'Do you want to land captn?' asks Jack"
+               answer = raw_input("yes or no: ")
                
                if answer == 'yes':
                    print ""
-                   print "the exploration sets down on the base of the planet near the temple and you and jack get out to go exploring"
-                   print "'do you want to go towards the temple or scout out the rockey terrian?'"
+                   print "The exploration sets down on the base of the planet near the temple and you and Jack get out to go exploring."
+                   print "Do you want to go towards the temple or scout out the rockey terrian?"
                    answer1 = raw_input("Do you go towards the temple?   ")
                    
                if answer != 'yes':
                    print ""                                                    #THRID PLANET STARTS HERE
-                   print "'very well jumping to the next sector we only have enough fuel to get home so we better find something here' says jack"
-                   print "you enter the last planet knowing that you have to find something here or you have failed yor mission."
-                   print "jack approaces you, 'do you want to scan the last planet captn?"
-                   answer2 = raw_input("")
+                   print "'Very well jumping to the next sector, we only have enough fuel to get home so we better find something here' says Jack."
+                   print "You enter the last planet knowing that you have to find something here or you have failed your mission."
+                   print "Jack approaces you, 'do you want to scan the last planet captn?"
+                   answer2 = raw_input("yes or no: ")
                    
                    if answer2 == 'yes':
                        print ""
                        print "the scanner comes back a little while later wiht alarming news"
-                       print "'it appears that not only is their life on thsi planet it is highly intelligent and they are sending warships towards us right now!' jack syas frantaclly"
+                       print "'it appears that not only is their life on thsi planet it is highly intelligent and they are sending warships towards us right now!' Jack syas frantaclly"
                        print "the exploration goes to jump out of the system but its too late. The alien fleet is already on them."
                        print "being a scouting ship the exporation doesnt stand a chance, all you can do is hope they have mercy as they close in."
                        print ""
@@ -104,17 +104,17 @@ if planet == 'Moltafari':
                        
                    if answer1 == 'yes':                                         #NOT PART OF THIRD PLANET
                        print ""
-                       print "you walk up to the the front door of the looming stone temple 'guess we should knock' jokes jack"
+                       print "you walk up to the the front door of the looming stone temple 'guess we should knock' jokes Jack"
                        print "you go up to the front of the large temple door and push on it. Supprisally it opens with ease."
                        print "through the door lies a room with 3 cups and a large engraving that reads 'drink and your safe passage will be certin.'"
-                       print "'seems like one of them is the the correct one ay' jokes jack"
+                       print "'seems like one of them is the the correct one ay' jokes Jack"
                        print "let me go first if I die I know I will die for the capital plus the crew needs you to get back safely."
                        print "Which cup will Jack drink out of 1 2 or 3"
                        answer = raw_input("")
                        
                        if answer == '1':
                            print ""
-                           print "jack drinks from the cup the cup 'whew good guess captain I thought that I wasnt going to ma-' jack falls over dead with the cup in his hand"
+                           print "Jack drinks from the cup the cup 'whew good guess captain I thought that I wasnt going to ma-' Jack falls over dead with the cup in his hand"
                            print "it is now up to you to carry on the mission"
                            print "guess another cup"
                            answer = raw_input("")
@@ -138,10 +138,10 @@ if planet == 'Moltafari':
                            
                        if answer == '2':
                            print ""
-                           print "jack drinks from the cup the cup 'whew good guess captain I thought that I wasnt going to ma-' jack falls over dead with the cup in his hand"
+                           print "Jack drinks from the cup the cup 'whew good guess captain I thought that I wasnt going to ma-' Jack falls over dead with the cup in his hand"
                            print "it is now up to you to carry on the mission"
                            print "guess another cup"
-                           answer = raw_input("")
+                           answer = raw_input("1 or 3: ")
                            
                            if answer == '1':
                                print ""
@@ -152,7 +152,7 @@ if planet == 'Moltafari':
                                quit()
                            if answer == '3':
                                print ""
-                               print "jack drinks from the cup and and smiles, 'thats the best thing ive tasted in a while.'"
+                               print "Jack drinks from the cup and and smiles, 'thats the best thing ive tasted in a while.'"
                                print "A secret door opens up in the wall and you enter, inside their is a massive pile of gold and diamonds"
                                print "you have succed your mission!"
                                print ""
@@ -162,7 +162,7 @@ if planet == 'Moltafari':
                               
                        if answer == '3':
                            print ""
-                           print "jack drinks from the cup and and smiles, 'thats the best thing ive tasted in a while.'"
+                           print "Jack drinks from the cup and and smiles, 'thats the best thing ive tasted in a while.'"
                            print "A secret door opens up in the wall and you enter, inside their is a massive pile of gold and diamonds"
                            print "you have succeded your mission!"
                            print ""
@@ -173,7 +173,7 @@ if planet == 'Moltafari':
                            
                if answer1 != 'yes':
                    print ""
-                   print "you and jack wonder around for a bit exploring the rocks and enjoying the nature"
+                   print "you and Jack wonder around for a bit exploring the rocks and enjoying the nature"
                    print "suddenly a giant rock worm erupts out of the ground and mauls both of you"
                    print ""
                    print ""
@@ -187,37 +187,37 @@ if planet == 'Moltafari':
                print "jumping to the next sector now"
                print "you get to the next next sector and their their is a planet that is in front of you."
                print "would you like to scan it?"
-               answer = raw_input("")
+               answer = raw_input("yes or no: ")
            
            if answer == 'yes':
                print ""
                print "you see that the planet in front of you in alike the one that you just visited from the scanner report"
                print "after some further studying it looks like their is somekind of temple on the surface"
-               print "'do you want to land captn?' asks jack"
-               answer = raw_input("")
+               print "'do you want to land captn?' asks Jack"
+               answer = raw_input("yes or no: ")
                
                if answer == 'yes':
                    print ""
-                   print "the exploration sets down on the base of the planet near the temple and you and jack get out to go exploring"
+                   print "the exploration sets down on the base of the planet near the temple and you and Jack get out to go exploring"
                    print "'do you want to go towards the temple or scout out the rockey terrian?'"
                    answer = raw_input("Do you go towards the temple?   ")
                    
                    if answer == 'yes':
                        print ""
-                       print "you walk up to the the front door of the looming stone temple 'guess we should knock' jokes jack"
+                       print "you walk up to the the front door of the looming stone temple 'guess we should knock' jokes Jack"
                        print "you go up to the front of the large temple door and push on it. Supprisally it opens with ease."
                        print "through the door lies a room with 3 cups and a large engraving that reads 'drink and your safe passage will be certin.'"
-                       print "'seems like one of them is the the correct one ay' jokes jack"
+                       print "'seems like one of them is the the correct one ay' jokes Jack"
                        print "let me go first if I die I know I will die for the capital plus the crew needs you to get back safely."
                        print "Which cup will Jack drink out of 1 2 or 3"
                        answer = raw_input("")
                        
                        if answer == '1':
                            print ""
-                           print "jack drinks from the cup the cup 'whew good guess captain I thought that I wasnt going to ma-' jack falls over dead with the cup in his hand"
+                           print "Jack drinks from the cup the cup 'whew good guess captain I thought that I wasnt going to ma-' Jack falls over dead with the cup in his hand"
                            print "it is now up to you to carry on the mission"
                            print "guess another cup"
-                           answer = raw_input("")
+                           answer = raw_input("2 or 3: ")
                            
                            if answer =='2':
                                print ""
@@ -238,10 +238,10 @@ if planet == 'Moltafari':
                            
                        if answer == '2':
                            print ""
-                           print "jack drinks from the cup the cup 'whew good guess captain I thought that I wasnt going to ma-' jack falls over dead with the cup in his hand"
+                           print "Jack drinks from the cup the cup 'whew good guess captain I thought that I wasnt going to ma-' Jack falls over dead with the cup in his hand"
                            print "it is now up to you to carry on the mission"
                            print "guess another cup"
-                           answer = raw_input("")
+                           answer = raw_input("1 or 3: ")
                            
                            if answer == '1':
                                print ""
@@ -252,7 +252,7 @@ if planet == 'Moltafari':
                                quit()
                            if answer == '3':
                                print ""
-                               print "jack drinks from the cup and and smiles, 'thats the best thing ive tasted in a while.'"
+                               print "Jack drinks from the cup and and smiles, 'thats the best thing ive tasted in a while.'"
                                print "A secret door opens up in the wall and you enter, inside their is a massive pile of gold and diamonds"
                                print "you have succed your mission!"
                                print ""
@@ -262,7 +262,7 @@ if planet == 'Moltafari':
                               
                        if answer == '3':
                            print ""
-                           print "jack drinks from the cup and and smiles, 'thats the best thing ive tasted in a while.'"
+                           print "Jack drinks from the cup and and smiles, 'thats the best thing ive tasted in a while.'"
                            print "A secret door opens up in the wall and you enter, inside their is a massive pile of gold and diamonds"
                            print "you have succeded your mission!"
                            print ""
@@ -273,7 +273,7 @@ if planet == 'Moltafari':
                            
                if answer != 'yes':
                    print ""
-                   print "you and jack wonder around for a bit exploring the rocks and enjoying the nature"
+                   print "you and Jack wonder around for a bit exploring the rocks and enjoying the nature"
                    print "suddenly a giant rock worm erupts out of the ground and mauls both of you"
                    print ""
                    print ""
@@ -287,37 +287,37 @@ if planet == 'Moltafari':
            
            print "you get to the next next sector and their their is a planet that is in front of you."
            print "Do you scan the planet?"
-           answer = raw_input("")
+           answer = raw_input("yes or no: ")
            
            if answer == 'yes':
                print ""
                print "you see that the planet in front of you in alike the one that you just visited from the scanner report"
                print "after some further studying it looks like their is somekind of temple on the surface"
-               print "'do you want to land captn?' asks jack"
-               answer = raw_input("")
+               print "'do you want to land captn?' asks Jack"
+               answer = raw_input("yes or no: ")
                
                if answer == 'yes':
                    print ""
-                   print "the exploration sets down on the base of the planet near the temple and you and jack get out to go exploring"
+                   print "the exploration sets down on the base of the planet near the temple and you and Jack get out to go exploring"
                    print "'do you want to go towards the temple or scout out the rockey terrian?'"
                    answer = raw_input("Do you go towards the temple?   ")
                    
                    if answer == 'yes':
                        print ""
-                       print "you walk up to the the front door of the looming stone temple 'guess we should knock' jokes jack"
+                       print "you walk up to the the front door of the looming stone temple 'guess we should knock' jokes Jack"
                        print "you go up to the front of the large temple door and push on it. Supprisally it opens with ease."
                        print "through the door lies a room with 3 cups and a large engraving that reads 'drink and your safe passage will be certin.'"
-                       print "'seems like one of them is the the correct one ay' jokes jack"
+                       print "'seems like one of them is the the correct one ay' jokes Jack"
                        print "let me go first if I die I know I will die for the capital plus the crew needs you to get back safely."
                        print "Which cup will Jack drink out of 1 2 or 3"
                        answer = raw_input("")
                        
                        if answer == '1':
                            print ""
-                           print "jack drinks from the cup the cup 'whew good guess captain I thought that I wasnt going to ma-' jack falls over dead with the cup in his hand"
+                           print "Jack drinks from the cup the cup 'whew good guess captain I thought that I wasnt going to ma-' Jack falls over dead with the cup in his hand"
                            print "it is now up to you to carry on the mission"
                            print "guess another cup"
-                           answer = raw_input("")
+                           answer = raw_input("2 or 3: ")
                            
                            if answer =='2':
                                print ""
@@ -338,10 +338,10 @@ if planet == 'Moltafari':
                            
                        if answer == '2':
                            print ""
-                           print "jack drinks from the cup the cup 'whew good guess captain I thought that I wasnt going to ma-' jack falls over dead with the cup in his hand"
+                           print "Jack drinks from the cup the cup 'whew good guess captain I thought that I wasnt going to ma-' Jack falls over dead with the cup in his hand"
                            print "it is now up to you to carry on the mission"
                            print "guess another cup"
-                           answer = raw_input("")
+                           answer = raw_input("1 or 3: ")
                            
                            if answer == '1':
                                print ""
@@ -352,7 +352,7 @@ if planet == 'Moltafari':
                                quit()
                            if answer == '3':
                                print ""
-                               print "jack drinks from the cup and and smiles, 'thats the best thing ive tasted in a while.'"
+                               print "Jack drinks from the cup and and smiles, 'thats the best thing ive tasted in a while.'"
                                print "A secret door opens up in the wall and you enter, inside their is a massive pile of gold and diamonds"
                                print "you have succed your mission!"
                                print ""
@@ -362,7 +362,7 @@ if planet == 'Moltafari':
                               
                        if answer == '3':
                            print ""
-                           print "jack drinks from the cup and and smiles, 'thats the best thing ive tasted in a while.'"
+                           print "Jack drinks from the cup and and smiles, 'thats the best thing ive tasted in a while.'"
                            print "A secret door opens up in the wall and you enter, inside their is a massive pile of gold and diamonds"
                            print "you have succeded your mission!"
                            print ""
@@ -373,7 +373,7 @@ if planet == 'Moltafari':
                            
                if answer != 'yes':
                    print ""
-                   print "you and jack wonder around for a bit exploring the rocks and enjoying the nature"
+                   print "you and Jack wonder around for a bit exploring the rocks and enjoying the nature"
                    print "suddenly a giant rock worm erupts out of the ground and mauls both of you"
                    print ""
                    print ""
@@ -384,12 +384,12 @@ if planet == 'Moltafari':
                print ""
                print "'very well jumping to the next sector we only have enough fuel to get home so we better find something here'"
                print "you enter the last planet knowing that you have to find something here or you have failed yor mission."
-               print "jack approaces you, 'do you want to scan the last planet captn?"
-               answer2 = raw_input("")
+               print "Jack approaces you, 'do you want to scan the last planet captn?"
+               answer2 = raw_input("yes or no: ")
                if answer2 == 'yes':
                        print ""
                        print "the scanner comes back a little while later wiht alarming news"
-                       print "'it appears that not only is their life on thsi planet it is highly intelligent and they are sending warships towards us right now!' jack syas frantaclly"
+                       print "'it appears that not only is their life on thsi planet it is highly intelligent and they are sending warships towards us right now!' Jack syas frantaclly"
                        print "the exploration goes to jump out of the system but its too late. The alien fleet is already on them."
                        print "being a scouting ship the exporation doesnt stand a chance, all you can do is hope they have mercy as they close in."
                        print ""
