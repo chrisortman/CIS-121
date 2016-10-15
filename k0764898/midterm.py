@@ -1,11 +1,5 @@
-from sys import exit
-from random import randint
-
-class Scene(object):
-
-    def enter(self):
-        pass
-
+from death import Death
+from scene import Scene
 
 class Engine(object):
 
@@ -22,11 +16,6 @@ class Engine(object):
 
         # be sure to print out the last scene
         current_scene.enter()
-
-class Death(Scene):
-
-    def enter(self):
-        print "looks like you died maybe you should get good"
 
 class LobbyRoom(Scene):
 
