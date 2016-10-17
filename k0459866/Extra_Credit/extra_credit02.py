@@ -1,4 +1,5 @@
 # Q U I C K  S O R T I N G
+#EXAMPLE
 def quickSort(alist):
    quickSortHelper(alist,0,len(alist)-1)
 
@@ -37,10 +38,10 @@ def partition(alist,first,last):
    alist[first] = alist[rightmark]
    alist[rightmark] = temp
 
-
    return rightmark
 
 alist = [54,26,93,17,77,31,44,55,20]
 quickSort(alist)
 print(alist)
 ################################################################################
+#OWN
